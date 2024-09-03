@@ -8,22 +8,22 @@
 		const GigaDetails   = document.querySelector("#giga");
 		const MSIDetails    = document.querySelector("#msi");
 
-		AsusDetails.removeAttribute('open');
-		AsrockDetails.removeAttribute('open');
-		GigaDetails.removeAttribute('open');
-		MSIDetails.removeAttribute('open');
+		AsusDetails.open = false;
+		AsrockDetails.open = false;
+		GigaDetails.open = false;
+		MSIDetails.open = false;
 
 		if( 0 == i ){
-	 	   AsusDetails.setAttribute("open", "");
+	 	   AsusDetails.open = true;
 		}
 		else if( 1 == i ){
-	 	   AsrockDetails.setAttribute("open", "");
+	 	   AsrockDetails.open = true;
 		}
 		else if( 2 == i ){
-	 	   GigaDetails.setAttribute("open", "");
+	 	   GigaDetails.open = true;
 		}
 		else if( 3 == i ){
-	 	   MSIDetails.setAttribute("open", "");
+	 	   MSIDetails.open = true;
 		}
 	  }
 	</script>
@@ -50,8 +50,8 @@
 3.ファームウエアメニュー<br>
 　メーカーにより異なるので、最も近いメニューをタップしてください。<br>
 　※機種によりカラーリングが異なることがあります。<br>
-　<a href="#asus" onclick="OpenDetails('0');"><img src="./pic/asus01.png" width="340" height="255"></a> <a href="#asrock" onclick="OpenDetails('1');"><img src="./pic/asrock01.png" width="340" height="255"></a><br>
-　<a href="#giga" onclick="OpenDetails('2');"><img src="./pic/giga01.png" width="340" height="255"></a> <a href="#msi" onclick="OpenDetails('3');"><img src="./pic/msi01.png" width="340" height="255"></a><br>
+　<a href="#asus" onclick="OpenDetails(0);"><img src="./pic/asus01.png" width="340" height="255"></a> <a href="#asrock" onclick="OpenDetails(1);"><img src="./pic/asrock01.png" width="340" height="255"></a><br>
+　<a href="#giga" onclick="OpenDetails(2);"><img src="./pic/giga01.png" width="340" height="255"></a> <a href="#msi" onclick="OpenDetails(3);"><img src="./pic/msi01.png" width="340" height="255"></a><br>
 
 <hr>
 <section>
