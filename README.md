@@ -1,8 +1,3 @@
-<html>
-<head>
-    <title>valorantのvan9001 van9003 エラー対策(Ryzen5000/Ryzen3000シリーズ用)</title>
-</head>
-<body>
 <h2>valorant の van9001 van9003 エラー対策</h2>
 
 　症状：windows11で、valorantをプレイすると上記エラーでゲームが落ちる <br>
@@ -219,5 +214,3 @@
 <hr>
 
 <br><br>
-</body>
-</html>
