@@ -1,3 +1,26 @@
+<html>
+<head>
+    <title>valorantのvan9001 van9003 エラー対策(Ryzen5000/Ryzen3000シリーズ用)</title>
+	<script>
+	  function OpenAsus() {
+		const DetailsID = document.querySelector("#asus");
+	 	    DetailsID.setAttribute("open", "");
+	  }
+	  function OpenAsrock() {
+		const DetailsID = document.querySelector("#asrock");
+	 	    DetailsID.setAttribute("open", "");
+	  }
+	  function OpenGiga() {
+		const DetailsID = document.querySelector("#giga");
+	 	    DetailsID.setAttribute("open", "");
+	  }
+	  function OpenMSI() {
+		const DetailsID = document.querySelector("#msi");
+	 	    DetailsID.setAttribute("open", "");
+	  }
+	</script>
+</head>
+<body>
 <h2>valorant の van9001 van9003 エラー対策</h2>
 
 　症状：windows11で、valorantをプレイすると上記エラーでゲームが落ちる <br>
@@ -19,12 +42,12 @@
 3.ファームウエアメニュー<br>
 　メーカーにより異なるので、最も近いメニューをタップしてください。<br>
 　※機種によりカラーリングが異なることがあります。<br>
-　<a href="#asus"><img src="./pic/asus01.png" width="340" height="255"></a> <a href="#asrock"><img src="./pic/asrock01.png" width="340" height="255"></a><br>
-　<a href="#giga"><img src="./pic/giga01.png" width="340" height="255"></a> <a href="#msi"><img src="./pic/msi01.png" width="340" height="255"></a><br>
+　<a href="#asus" onclick="OpenAsus();"><img src="./pic/asus01.png" width="340" height="255"></a> <a href="#asrock" onclick="OpenAsrock();"><img src="./pic/asrock01.png" width="340" height="255"></a><br>
+　<a href="#giga" onclick="OpenGiga();"><img src="./pic/giga01.png" width="340" height="255"></a> <a href="#msi" onclick="OpenMSI();"><img src="./pic/msi01.png" width="340" height="255"></a><br>
 
 <hr>
-<section aria-labelledby="setting">
-　<details name="uefi"><summary id="asus">UEFI BIOS Utility (ASUS)</summary>
+<section>
+　<details name="uefi" id="asus"><summary>UEFI BIOS Utility (ASUS)</summary>
 	<p>4.ファームウェアの設定<br>
 	　メニューの言語が日本語の場合もありますが、大体英語のカタカナ表記になっています。<br>
 	　※キーボードのカーソルキー(矢印)とEnterキー(決定)、ESCキー(戻る)でも操作できます。<br>
@@ -63,7 +86,7 @@
 	　エラーが引き続き出る場合は、ファームウエアの更新が必要になる場合があります。<br>
 	</p></details>
 <hr>
-　<details name="uefi"><summary id="asrock">ASRock</summary>
+　<details name="uefi" id="asrock"><summary>ASRock</summary>
 	<p>4.ファームウェアの設定<br>
 	　メニューの言語が日本語の場合もありますが、大体英語のカタカナ表記になっています。<br>
 	　※キーボードのカーソルキー(矢印)とEnterキー(決定)、ESCキー(戻る)でも操作できます。<br>
@@ -102,7 +125,7 @@
 	　エラーが引き続き出る場合は、<a href="https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11278912276" target="_blank">こちらの手順</a>を試してみてください。<br>
 	</p></details>
 <hr>
-　<details name="uefi"><summary id="giga">AORUS (Gigabyte)</summary>
+　<details name="uefi" id="giga"><summary>AORUS (Gigabyte)</summary>
 	<p>4.ファームウェアの設定<br>
 	　項目の場所や表記が機種によってバラバラなうえ、手順が複雑なので難易度が高く<br>
 	　全てのステップを正確に書けてるかは怪しいので、設定変更はおすすめしません。<br><br>
@@ -164,7 +187,7 @@
 	　<a href="https://www.reddit.com/r/gigabyte/comments/ocimkx/x570_elite_mobo_secure_boot_problem/" target="_blank">X570 Elite Mobo, secure boot problem (アメリカ語)</a><br><br>
 	</p></details>
 <hr>
-　<details name="uefi"><summary id="msi">MSI</summary>
+　<details name="uefi" id="msi"><summary>MSI</summary>
 	<p>4.ファームウェアの設定<br>
 	　メニューの言語が日本語の場合もありますが、大体英語のカタカナ表記になっています。<br>
 	　※キーボードのカーソルキー(矢印)とEnterキー(決定)、ESCキー(戻る)でも操作できます。<br>
@@ -214,3 +237,5 @@
 <hr>
 
 <br><br>
+</body>
+</html>
