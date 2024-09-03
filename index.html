@@ -2,21 +2,29 @@
 <head>
     <title>valorantのvan9001 van9003 エラー対策(Ryzen5000/Ryzen3000シリーズ用)</title>
 	<script>
-	  function OpenAsus() {
-		const DetailsID = document.querySelector("#asus");
-	 	    DetailsID.setAttribute("open", "");
-	  }
-	  function OpenAsrock() {
-		const DetailsID = document.querySelector("#asrock");
-	 	    DetailsID.setAttribute("open", "");
-	  }
-	  function OpenGiga() {
-		const DetailsID = document.querySelector("#giga");
-	 	    DetailsID.setAttribute("open", "");
-	  }
-	  function OpenMSI() {
-		const DetailsID = document.querySelector("#msi");
-	 	    DetailsID.setAttribute("open", "");
+	  function OpenDetails(i) {
+		const AsusDetails   = document.querySelector("#asus");
+		const AsrockDetails = document.querySelector("#asrock");
+		const GigaDetails   = document.querySelector("#giga");
+		const MSIDetails    = document.querySelector("#msi");
+
+		AsusDetails.removeAttribute('open');
+		AsrockDetails.removeAttribute('open');
+		GigaDetails.removeAttribute('open');
+		MSIDetails.removeAttribute('open');
+
+		if( 0 == i ){
+	 	   AsusDetails.setAttribute("open", "");
+		}
+		else if( 1 == i ){
+	 	   AsrockDetails.setAttribute("open", "");
+		}
+		else if( 2 == i ){
+	 	   GigaDetails.setAttribute("open", "");
+		}
+		else if( 3 == i ){
+	 	   MSIDetails.setAttribute("open", "");
+		}
 	  }
 	</script>
 </head>
@@ -42,8 +50,8 @@
 3.ファームウエアメニュー<br>
 　メーカーにより異なるので、最も近いメニューをタップしてください。<br>
 　※機種によりカラーリングが異なることがあります。<br>
-　<a href="#asus" onclick="OpenAsus();"><img src="./pic/asus01.png" width="340" height="255"></a> <a href="#asrock" onclick="OpenAsrock();"><img src="./pic/asrock01.png" width="340" height="255"></a><br>
-　<a href="#giga" onclick="OpenGiga();"><img src="./pic/giga01.png" width="340" height="255"></a> <a href="#msi" onclick="OpenMSI();"><img src="./pic/msi01.png" width="340" height="255"></a><br>
+　<a href="#asus" onclick="OpenDetails('0');"><img src="./pic/asus01.png" width="340" height="255"></a> <a href="#asrock" onclick="OpenDetails('1');"><img src="./pic/asrock01.png" width="340" height="255"></a><br>
+　<a href="#giga" onclick="OpenDetails('2');"><img src="./pic/giga01.png" width="340" height="255"></a> <a href="#msi" onclick="OpenDetails('3');"><img src="./pic/msi01.png" width="340" height="255"></a><br>
 
 <hr>
 <section>
