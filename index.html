@@ -67,12 +67,12 @@ fTPM、SVM、セキュアブートを有効、CSM無効(機種による)の4つ<
 <hr>
 <section>
   <details name="uefi" id="asus"><summary>UEFI BIOS Utility (ASUS)</summary>
-	<p>4.ファームウェアの設定(fTPM)<br>
-	<div style="padding-left:0.5em;">
-	言語が日本語の場合もありますが、大体英語のカタカナ読みです。<br>
+	<p>言語が日本語の場合もありますが、大体英語のカタカナ読みです。<br>
 	※キーボードの矢印キーとEnter(決定)、ESC(戻る)でも操作できます。<br>
 	※機種により表記や色が異なる事があります。<br><br>
 
+	4.ファームウェアの設定(fTPM)<br>
+	<div style="padding-left:0.5em;">
 	まず画面右下のAdvanced Mode(詳細モード) を選択します。画面上部<br>
 	にある Advanced(詳細) タブを開くと、一番上に AMD fTPM Config～<br>
 	が有るので、メニューに入ります。TPM Device Selection を選ぶと<br>
@@ -109,7 +109,7 @@ fTPM、SVM、セキュアブートを有効、CSM無効(機種による)の4つ<
 	<div style="padding-left:0.5em;">
 	画面上部にある Exit タブを開くと、上から二番目に Save Change～<br>
 	(保存して再起動)が表示されるので、選択します。ポップアップで<br>
-	選択肢が表示されるのでYESを選んで設定を保存し再起動します。<br>
+	選択肢が表示されるのでOKを選んで設定を保存し再起動します。<br>
 	設定を保存せずに終了するには Discard Change &amp; Exit にします。<br><br>
 
 	・Exit→Save Change &amp; Reset→Yes<br>
@@ -134,12 +134,12 @@ fTPM、SVM、セキュアブートを有効、CSM無効(機種による)の4つ<
 	</p></details>
 <hr>
 　<details name="uefi" id="asrock"><summary>ASRock</summary>
-	<p>4.ファームウェアの設定(fTPM)<br>
-	<div style="padding-left:0.5em;">
-	言語が日本語の場合もありますが、大体英語のカタカナ読みです。<br>
+	<p>言語が日本語の場合もありますが、大体英語のカタカナ読みです。<br>
 	※キーボードの矢印キーとEnter(決定)、ESC(戻る)でも操作できます。<br>
 	※機種により表記や色が異なる事があります。<br><br>
 
+	4.ファームウェアの設定(fTPM)<br>
+	<div style="padding-left:0.5em;">
 	まず Advanced Mode(詳細モード) の項目がある機種は選択します。<br>
 	無い機種はそのまま Advanced(詳細) タブを開いて下さい。一番上の<br>
 	CPU Config～ メニューに入り、画面下側の AMD fTPM を選択すると<br>
@@ -210,9 +210,7 @@ fTPM、SVM、セキュアブートを有効、CSM無効(機種による)の4つ<
 	</p></details>
 <hr>
 　<details name="uefi" id="giga"><summary>AORUS (Gigabyte)</summary>
-	<p>4.ファームウェアの設定(SVM、fTPM)<br>
-	<div style="padding-left:0.5em;">
-	項目の場所や表記が機種によってバラバラなうえ、手順が複雑で<br>
+	<p>項目の場所や表記が機種によってバラバラなうえ、手順が複雑で<br>
 	難易度が高く、全てのステップを正確に書けてるかは怪しいので、<br>
 	設定変更はおすすめしません。<br><br>
 
@@ -227,6 +225,8 @@ fTPM、SVM、セキュアブートを有効、CSM無効(機種による)の4つ<
 	※キーボードの矢印キーとEnter(決定)、ESC(戻る)でも操作できます。<br>
 	※機種により表記や色が異なる事があります。<br><br>
 
+	4.ファームウェアの設定(SVM、fTPM)<br>
+	<div style="padding-left:0.5em;">
 	まず画面右側のAdvanced Mode(詳細モード) を選択します。画面上部<br>
 	にある Tweaker(詳細) タブを開き、Advanced CPU Settings へ進み<br>
 	SVM Mode を選択すると、選択肢が出るので Enabled(有効)にします。<br><br>
@@ -322,12 +322,12 @@ fTPM、SVM、セキュアブートを有効、CSM無効(機種による)の4つ<
 	</p></details>
 <hr>
 　<details name="uefi" id="msi"><summary>MSI</summary>
-	<p>4.ファームウェアの設定(fTPM)<br>
-	<div style="padding-left:0.5em;">
-	言語が日本語の場合もありますが、大体英語のカタカナ読みです。<br>
+	<p>言語が日本語の場合もありますが、大体英語のカタカナ読みです。<br>
 	※キーボードの矢印キーとEnter(決定)、ESC(戻る)でも操作できます。<br>
 	※機種により表記や色が異なる事があります。<br><br>
 
+	4.ファームウェアの設定(fTPM)<br>
+	<div style="padding-left:0.5em;">
 	まず画面上部のAdvanced Mode(詳細モード) を選択します。画面左側<br>
 	にある SETTINGS タブを開きます。Security メニューに入り<br>
 	Trusted Computing の項目に進みます。<br><br>
@@ -408,6 +408,19 @@ fTPM、SVM、セキュアブートを有効、CSM無効(機種による)の4つ<
 	ファームウェア画面へ戻れます。<br>
 	</div>
 	</p></details>
+<hr>
+　<details name="uefi" id="error"><summary>起動しなくなった時は</summary>
+	<p><div style="padding-left:0.5em;">
+	CSM を無効にすると、古いグラボを起動時に見失う場合や、<br>
+	古い構成のディスクを見失ってwindowsのロードに失敗する事<br>
+	があります。<br><br>
+
+	その場合は、PC本体のコンセントを抜き側面パネルを取り外し<br>
+	マザボ上のボタン電池を取り外してください。　15分ほど放置<br>
+	したのち、ボタン電池を取り付け側面パネルを戻し<br>
+	コンセントを接続して電源を入れます。<br><br>
+	</div>
+ 	</p></details>
 </section>
 <hr>
 
