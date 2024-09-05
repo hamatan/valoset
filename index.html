@@ -29,12 +29,12 @@ windows11で、valorantをプレイすると上記エラーでゲームが落ち
 Ryzen5000シリーズ、Ryzen3000シリーズ搭載機<br><br>
 
 ◆設定項目<br>
-fTPM、SVM、セキュアブートを有効、CSM無効の4つ<br><br>
+fTPM、SVM、セキュアブートを有効、CSM無効(機種による)の4つ<br><br>
 
 
 対象機種か解らない場合は、マイクラの座標表示のときに<br>
 右上にRyzenやCore iのように表示されています。<br>
-<img src="./pic/minecraft.png" width="680" height="197"><br>
+<img src="./pic/minecraft2.png" width="680" height="197"><br>
 </div>
 
 ※Ryzen環境しかないのでIntel環境は別の記事を参照してください。<br>
@@ -94,17 +94,7 @@ fTPM、SVM、セキュアブートを有効、CSM無効の4つ<br><br>
 	<img src="./pic/asus05b.png" width="680" height="510"><br><br>
 	</div>
 
-	6.起動設定(CSM)<br>
-	<div style="padding-left:0.5em;">
-	画面上部にある Boot タブを開くと、上から二番目に CSM～ メニュー<br>
-	が有るので入ります。Launch CSMを選択すると、選択肢が表示される<br>
-	ので、Disabled(無効)にします。<br><br>
-
-	・Boot→CSM→Launch CSM 無効<br>
-	<img src="./pic/asus06.png" width="340" height="255"> <img src="./pic/asus07.png" width="340" height="255"><br><br>
-	</div>
-
-	7.セキュアブートの有効化<br>
+	6.セキュアブートの有効化<br>
 	<div style="padding-left:0.5em;">
 	メニュー上段の ←を選択し 前画面へ、上から三番目の SecureBoot<br>
 	メニューに入り、OS Type を選択すると選択肢が表示されるので<br>
@@ -115,7 +105,7 @@ fTPM、SVM、セキュアブートを有効、CSM無効の4つ<br><br>
 	<img src="./pic/asus09.png" width="680" height="510"><br><br>
 	</div>
 
-	8.設定の保存<br>
+	7.設定の保存<br>
 	<div style="padding-left:0.5em;">
 	画面上部にある Exit タブを開くと、上から二番目に Save Change～<br>
 	(保存して再起動)が表示されるので、選択します。ポップアップで<br>
@@ -126,7 +116,7 @@ fTPM、SVM、セキュアブートを有効、CSM無効の4つ<br><br>
 	<img src="./pic/asus10.png" width="680" height="510"><br><br>
 	</div>
 
-	9.動作確認<br>
+	8.動作確認<br>
 	<div style="padding-left:0.5em;">
 	Windowsが起動したら、Valorantでエラーが出ないか確認します。<br>
 	エラーが引き続き出る場合は、Windows11対応のファームウエアへ<br>
@@ -136,7 +126,7 @@ fTPM、SVM、セキュアブートを有効、CSM無効の4つ<br><br>
 	※トラブルシューティング<br>
 	<div style="padding-left:0.5em;">
 	windows11のローディングに失敗するようになった場合は、<br>
-	手順 6と7(CSM、Other OS)を戻してみてください。<br><br>
+	手順 6(Other OS)を戻してみてください。<br><br>
 
 	キーボードのDELキーを押し続けながらPCの電源を入れると<br>
 	ファームウェア画面へ戻れます。<br>
@@ -165,7 +155,9 @@ fTPM、SVM、セキュアブートを有効、CSM無効の4つ<br><br>
 	<div style="padding-left:0.5em;">
 	最上段の Boot タブを開き、画面下のCSM～(互換サポートモジュール)<br>
 	メニューに入ります。メニュー 一番上のCSMを選択すると、選択肢が<br>
-	表示されるので、Disabled(無効)にします。<br><br>
+	表示されるので、Disabled(無効)にします。<br>
+	※Geforce GTX1000シリーズなどの古いグラボは起動時に見失う<br>
+	場合があるので設定を変更しないでください。<br><br>
 
 	・Boot→CSM(互換サポートモジュール)→CSM 無効<br>
 	<img src="./pic/asrock05.png" width="340" height="255"> <img src="./pic/asrock06.png" width="340" height="255"><br><br>
@@ -256,7 +248,9 @@ fTPM、SVM、セキュアブートを有効、CSM無効の4つ<br><br>
 	5.起動設定(CSM)<br>
 	<div style="padding-left:0.5em;">
 	最上段の Boot タブを開き、画面中段のCSM Support(互換サポート～)<br>
-	を選択すると、選択肢が表示されるので Disabled(無効)にします。<br><br>
+	を選択すると、選択肢が表示されるので Disabled(無効)にします。<br>
+	※Geforce GTX1000シリーズなどの古いグラボは起動時に見失う<br>
+	場合があるので設定を変更しないでください。<br><br>
 
 	・Boot→CSM Support 無効<br>
 	<img src="./pic/giga06.png" width="680" height="510"><br><br>
@@ -351,7 +345,9 @@ fTPM、SVM、セキュアブートを有効、CSM無効の4つ<br><br>
 	<div style="padding-left:0.5em;">
 	画面左のSETTINGS から、Advanced(拡張項目)メニューに入ります。<br>
 	中央下の Windows OS Config～ へ進み、<br>
-	BIOS UEFI/CSM Mode を UEFI にします。<br><br>
+	BIOS UEFI/CSM Mode を UEFI にします。<br>
+	※Geforce GTX1000シリーズなどの古いグラボは起動時に見失う<br>
+	場合があるので設定を変更しないでください。<br><br>
 
 	・SETTINGS→Advanced→Windows OS Config→UEFI/CSM→UEFI<br>
 	<img src="./pic/msi05.png" width="340" height="255"> <img src="./pic/msi06.png" width="340" height="255"><br>
@@ -414,6 +410,7 @@ fTPM、SVM、セキュアブートを有効、CSM無効の4つ<br><br>
 	</p></details>
 </section>
 <hr>
+
 
 <br><br>
 </body>
