@@ -29,7 +29,7 @@ windows11で、valorantをプレイすると上記エラーでゲームが落ち
 Ryzen5000シリーズ、Ryzen3000シリーズ搭載機<br><br>
 
 ◆設定項目<br>
-fTPM、SVM、セキュアブートを有効、CSM無効(機種による)の4つ<br><br>
+fTPM、セキュアブートを有効、CSM無効(機種による)の3つ<br><br>
 
 
 対象機種か解らない場合は、マイクラの座標表示のときに<br>
@@ -67,7 +67,7 @@ fTPM、SVM、セキュアブートを有効、CSM無効(機種による)の4つ<
 <hr>
 <section>
   <details name="uefi" id="asus"><summary>UEFI BIOS Utility (ASUS)</summary>
-	<p>言語が日本語の場合もありますが、大体英語のカタカナ読みです。<br>
+	<p>表示言語が日本語の場合もありますが、大体英語のカタカナ読みです。<br>
 	※キーボードの矢印キーとEnter(決定)、ESC(戻る)でも操作できます。<br>
 	※機種により表記や色が異なる事があります。<br><br>
 
@@ -78,23 +78,12 @@ fTPM、SVM、セキュアブートを有効、CSM無効(機種による)の4つ<
 	が有るので、メニューに入ります。TPM Device Selection を選ぶと<br>
 	選択肢が表示されるので、Firmware TPM(有効) にします。<br><br>
 
-	・Advanced→AMD fTPM Config→TPM Device→fTPM 有効<br>
+	・Advanced→AMD fTPM Config→TPM Device→Firmware TPM<br>
 	<img src="./pic/asus02.png" width="340" height="255"> <img src="./pic/asus03.png" width="340" height="255"><br>
 	<img src="./pic/asus04.png" width="680" height="510"><br><br>
 	</div>
 
-	5.仮想化機能の設定(SVM)<br>
-	<div style="padding-left:0.5em;">
-	メニュー上段の ←を選択し 前画面へ<br>
-	上から二段目のCPU Config～メニューへ入ります。画面下側にある<br>
-	SVM Mode を選択すると、選択肢が出るので Enabled(有効)にします。<br><br>
-
-	・Advanced→CPU Config→SVM Mode 有効<br>
-	<img src="./pic/asus05.png" width="340" height="255"> <img src="./pic/asus05a.png" width="340" height="255"><br>
-	<img src="./pic/asus05b.png" width="680" height="510"><br><br>
-	</div>
-
-	6.セキュアブートの有効化<br>
+	5.セキュアブートの有効化<br>
 	<div style="padding-left:0.5em;">
 	メニュー上段の ←を選択し 前画面へ、上から三番目の SecureBoot<br>
 	メニューに入り、OS Type を選択すると選択肢が表示されるので<br>
@@ -105,7 +94,7 @@ fTPM、SVM、セキュアブートを有効、CSM無効(機種による)の4つ<
 	<img src="./pic/asus09.png" width="680" height="510"><br><br>
 	</div>
 
-	7.設定の保存<br>
+	6.設定の保存<br>
 	<div style="padding-left:0.5em;">
 	画面上部にある Exit タブを開くと、上から二番目に Save Change～<br>
 	(保存して再起動)が表示されるので、選択します。ポップアップで<br>
@@ -116,7 +105,7 @@ fTPM、SVM、セキュアブートを有効、CSM無効(機種による)の4つ<
 	<img src="./pic/asus10.png" width="680" height="510"><br><br>
 	</div>
 
-	8.動作確認<br>
+	7.動作確認<br>
 	<div style="padding-left:0.5em;">
 	Windowsが起動したら、Valorantでエラーが出ないか確認します。<br>
 	エラーが引き続き出る場合は、Windows11対応のファームウエアへ<br>
@@ -126,7 +115,7 @@ fTPM、SVM、セキュアブートを有効、CSM無効(機種による)の4つ<
 	※トラブルシューティング<br>
 	<div style="padding-left:0.5em;">
 	windows11のローディングに失敗するようになった場合は、<br>
-	手順 6(Other OS)を戻してみてください。<br><br>
+	手順 5(Other OS)を戻してみてください。<br><br>
 
 	キーボードのDELキーを押し続けながらPCの電源を入れると<br>
 	ファームウェア画面へ戻れます。<br>
@@ -134,7 +123,7 @@ fTPM、SVM、セキュアブートを有効、CSM無効(機種による)の4つ<
 	</p></details>
 <hr>
 　<details name="uefi" id="asrock"><summary>ASRock</summary>
-	<p>言語が日本語の場合もありますが、大体英語のカタカナ読みです。<br>
+	<p>表示言語が日本語の場合もありますが、大体英語のカタカナ読みです。<br>
 	※キーボードの矢印キーとEnter(決定)、ESC(戻る)でも操作できます。<br>
 	※機種により表記や色が異なる事があります。<br><br>
 
@@ -142,8 +131,8 @@ fTPM、SVM、セキュアブートを有効、CSM無効(機種による)の4つ<
 	<div style="padding-left:0.5em;">
 	まず Advanced Mode(詳細モード) の項目がある機種は選択します。<br>
 	無い機種はそのまま Advanced(詳細) タブを開いて下さい。一番上の<br>
-	CPU Config～ メニューに入り、画面下側の AMD fTPM を選択すると<br>
-	選択肢が表示されるので AMD CPU fTPM に変更します。<br>
+	CPU Config～ メニューに入り、画面下側の AMD fTPM Switchを選択<br>
+	すると、選択肢が表示されるので AMD CPU fTPM に変更します。<br>
 	その項目が無い場合は Enabled(有効)にします。<br><br>
 
 	・Advanced→CPU Config→fTPM (有効)<br>
@@ -156,8 +145,8 @@ fTPM、SVM、セキュアブートを有効、CSM無効(機種による)の4つ<
 	最上段の Boot タブを開き、画面下のCSM～(互換サポートモジュール)<br>
 	メニューに入ります。メニュー 一番上のCSMを選択すると、選択肢が<br>
 	表示されるので、Disabled(無効)にします。<br>
-	※Geforce GTX1000シリーズなどの古いグラボは起動時に見失う<br>
-	場合があるので設定を変更しないでください。<br><br>
+	※Geforce GTX1000シリーズなどの古いグラボでは起動時に見失う事が<br>
+	あるので設定変更しないでください<br><br>
 
 	・Boot→CSM(互換サポートモジュール)→CSM 無効<br>
 	<img src="./pic/asrock05.png" width="340" height="255"> <img src="./pic/asrock06.png" width="340" height="255"><br><br>
@@ -225,19 +214,12 @@ fTPM、SVM、セキュアブートを有効、CSM無効(機種による)の4つ<
 	※キーボードの矢印キーとEnter(決定)、ESC(戻る)でも操作できます。<br>
 	※機種により表記や色が異なる事があります。<br><br>
 
-	4.ファームウェアの設定(SVM、fTPM)<br>
+	4.ファームウェアの設定(fTPM)<br>
 	<div style="padding-left:0.5em;">
 	まず画面右側のAdvanced Mode(詳細モード) を選択します。画面上部<br>
-	にある Tweaker(詳細) タブを開き、Advanced CPU Settings へ進み<br>
-	SVM Mode を選択すると、選択肢が出るので Enabled(有効)にします。<br><br>
-
-	・Tweaker→Advanced CPU Settings→SVM Mode 有効<br>
-	<img src="./pic/giga02.png" width="340" height="255"> <img src="./pic/giga03a.png" width="340" height="255"><br>
-	<img src="./pic/giga05a.png" width="680" height="510"><br><br>
-
-	最上段の Settings (Peripherals表記の場合も有り) を選択し、<br>
-	AMD CPU fTPM を Enabled(有効) にします。<br>
-	※Settings - Miscellaneousサブメニューの中に有る機種もあります。<br><br>
+	にある Settings を選択し、AMD CPU fTPM を Enabled(有効) にします。<br>
+	※Settings - Miscellaneous サブメニューの中に有る機種もあります。<br>
+	※Settings が Peripherals 表記の場合も有ります。<br><br>
 
 	・Settings→AMD CPU fTPM 有効<br>
 	※Settings→Miscellaneous→AMD CPU fTPM の場合もあり<br>
@@ -249,8 +231,8 @@ fTPM、SVM、セキュアブートを有効、CSM無効(機種による)の4つ<
 	<div style="padding-left:0.5em;">
 	最上段の Boot タブを開き、画面中段のCSM Support(互換サポート～)<br>
 	を選択すると、選択肢が表示されるので Disabled(無効)にします。<br>
-	※Geforce GTX1000シリーズなどの古いグラボは起動時に見失う<br>
-	場合があるので設定を変更しないでください。<br><br>
+	※Geforce GTX1000シリーズなどの古いグラボでは起動時に見失う事が<br>
+	あるので設定変更しないでください<br><br>
 
 	・Boot→CSM Support 無効<br>
 	<img src="./pic/giga06.png" width="680" height="510"><br><br>
@@ -346,8 +328,8 @@ fTPM、SVM、セキュアブートを有効、CSM無効(機種による)の4つ<
 	画面左のSETTINGS から、Advanced(拡張項目)メニューに入ります。<br>
 	中央下の Windows OS Config～ へ進み、<br>
 	BIOS UEFI/CSM Mode を UEFI にします。<br>
-	※Geforce GTX1000シリーズなどの古いグラボは起動時に見失う<br>
-	場合があるので設定を変更しないでください。<br><br>
+	※Geforce GTX1000シリーズなどの古いグラボでは起動時に見失う事が<br>
+	あるので設定変更しないでください<br><br>
 
 	・SETTINGS→Advanced→Windows OS Config→UEFI/CSM→UEFI<br>
 	<img src="./pic/msi05.png" width="340" height="255"> <img src="./pic/msi06.png" width="340" height="255"><br>
@@ -368,18 +350,7 @@ fTPM、SVM、セキュアブートを有効、CSM無効(機種による)の4つ<
 	<img src="./pic/msi09a.png" width="680" height="510"><br><br>
 	</div>
 
-	7.仮想化機能の設定(SVM)<br>
-	<div style="padding-left:0.5em;">
-	画面左の OC から、メニュー 一番下の CPU Features または <br>
-	Advanced CPU Config～を開き、SVM Mode を選択します。選択肢は<br>
-	Enabled(有効)にします。<br><br>
-
-	・OC→CPU Features→SVM Mode 有効<br>
-	<img src="./pic/msi10.png" width="340" height="255"><br>
-	<img src="./pic/msi11.png" width="680" height="510"><br><br>
-	</div>
-
-	8.設定の保存<br>
+	7.設定の保存<br>
 	<div style="padding-left:0.5em;">
 	画面左のSETTINGS から、一番下の Save &amp; Exit(保存と終了)メニュー<br>
 	に入ります。Save Changes and Reboot(保存して再起動)を選択して<br>
@@ -391,7 +362,7 @@ fTPM、SVM、セキュアブートを有効、CSM無効(機種による)の4つ<
 	<img src="./pic/msi13.png" width="680" height="510"><br><br>
 	</div>
 
-	9.動作確認<br>
+	8.動作確認<br>
 	<div style="padding-left:0.5em;">
 	Windowsが起動したら、Valorantでエラーが出ないか確認します。<br>
 	エラーが引き続き出る場合は、手順 6.のエラーが表示された場合を<br>
