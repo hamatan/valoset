@@ -38,6 +38,10 @@ fTPM、セキュアブートを有効、CSM無効(機種による)の3つ<br><br
 </div>
 
 ※Ryzen環境しかないのでIntel環境は別の記事を参照してください。<br>
+※GeForce GTX1000シリーズの古いグラボを使用している場合は、<br>
+　PCで<a href="https://www.nvidia.com/en-us/drivers/nv-uefi-update-x64/">グラボのファームウェアアップデート</a>を実行してから、<br>
+　設定を行ってください。<br>
+
 <hr>
 
 1.Windows11のメニューから再起動<br>
@@ -87,7 +91,7 @@ fTPM、セキュアブートを有効、CSM無効(機種による)の3つ<br><br
 	5.セキュアブートの有効化<br>
 	<div style="padding-left:0.5em;">
 	画面上部の Boot(起動) タブを開き、上から三番目の SecureBoot<br>
-	メニューに入り、OS Type を選択すると選択肢が表示されるので<br>
+	メニューに入り、OS Type を選択します。選択肢が表示されるので<br>
 	Windows UEFI Mode に変更します。<br><br>
 
 	・Boot→SecureBoot→OS Type→Windows UEFI<br>
@@ -145,9 +149,7 @@ fTPM、セキュアブートを有効、CSM無効(機種による)の3つ<br><br
 	<div style="padding-left:0.5em;">
 	最上段の Boot タブを開き、画面下のCSM～(互換サポートモジュール)<br>
 	メニューに入ります。メニュー 一番上のCSMを選択すると、選択肢が<br>
-	表示されるので、Disabled(無効)にします。<br>
-	※Geforce GTX1000シリーズなどの古いグラボでは起動時に見失う事が<br>
-	あるので設定変更しないでください<br><br>
+	表示されるので、Disabled(無効)にします。<br><br>
 
 	・Boot→CSM(互換サポートモジュール)→CSM 無効<br>
 	<img src="./pic/asrock05.png" width="340" height="255"> <img src="./pic/asrock06.png" width="340" height="255"><br><br>
@@ -192,7 +194,7 @@ fTPM、セキュアブートを有効、CSM無効(機種による)の3つ<br><br
 	※トラブルシューティング<br>
 	<div style="padding-left:0.5em;">
 	windows11のローディングに失敗するようになった場合は、<br>
-	手順 5(CSM)を戻してみてください。<br><br>
+	手順5と6をCSM有効、SecureBoot無効に戻してみてください。<br><br>
 
 	キーボードのDELキーを押し続けながらPCの電源を入れると<br>
 	ファームウェア画面へ戻れます。<br>
@@ -231,9 +233,7 @@ fTPM、セキュアブートを有効、CSM無効(機種による)の3つ<br><br
 	5.起動設定(CSM)<br>
 	<div style="padding-left:0.5em;">
 	最上段の Boot タブを開き、画面中段のCSM Support(互換サポート～)<br>
-	を選択すると、選択肢が表示されるので Disabled(無効)にします。<br>
-	※Geforce GTX1000シリーズなどの古いグラボでは起動時に見失う事が<br>
-	あるので設定変更しないでください<br><br>
+	を選択すると、選択肢が表示されるので Disabled(無効)にします。<br><br>
 
 	・Boot→CSM Support 無効<br>
 	<img src="./pic/giga06.png" width="680" height="510"><br><br>
@@ -265,7 +265,7 @@ fTPM、セキュアブートを有効、CSM無効(機種による)の3つ<br><br
 	7.セキュアブートの有効化<br>
 	<div style="padding-left:0.5em;">
 	最上段の Boot を選択し、再びSecureBootメニューに入ります。<br>
-	SecureBootの項目がActiveになっていたら、<br>
+	SecureBootの項目がEnabled(有効)にし、Activeになっていたら、<br>
 	SecureBootModeをStandardへ戻します。<br><br>
 
 	・Boot→Secure Boot→Secure Boot 有効<br>
@@ -297,7 +297,7 @@ fTPM、セキュアブートを有効、CSM無効(機種による)の3つ<br><br
 	※トラブルシューティング<br>
 	<div style="padding-left:0.5em;">
 	windows11のローディングに失敗するようになった場合は、<br>
-	手順 5(CSM)を Enabled(有効)に戻してみてください。<br><br>
+	手順5と7をCSM有効、SecureBoot無効に戻してみてください。<br><br>
 
 	キーボードのDELキーを押し続けながらPCの電源を入れると<br>
 	ファームウェア画面へ戻れます。<br>
@@ -328,9 +328,7 @@ fTPM、セキュアブートを有効、CSM無効(機種による)の3つ<br><br
 	<div style="padding-left:0.5em;">
 	画面左のSETTINGS から、Advanced(拡張項目)メニューに入ります。<br>
 	中央下の Windows OS Config～ へ進み、<br>
-	BIOS UEFI/CSM Mode を UEFI にします。<br>
-	※Geforce GTX1000シリーズなどの古いグラボでは起動時に見失う事が<br>
-	あるので設定変更しないでください<br><br>
+	BIOS UEFI/CSM Mode を UEFI にします。<br><br>
 
 	・SETTINGS→Advanced→Windows OS Config→UEFI/CSM→UEFI<br>
 	<img src="./pic/msi05.png" width="340" height="255"> <img src="./pic/msi06.png" width="340" height="255"><br>
@@ -374,7 +372,7 @@ fTPM、セキュアブートを有効、CSM無効(機種による)の3つ<br><br
 	※トラブルシューティング<br>
 	<div style="padding-left:0.5em;">
 	windows11のローディングに失敗するようになった場合は、<br>
-	手順 5(CSM)を CSM に戻してみてください。<br><br>
+	手順5と6をCSMをCSM、SecureBoot無効に戻してみてください。<br><br>
 
 	キーボードのDELキーを押し続けながらPCの電源を入れると<br>
 	ファームウェア画面へ戻れます。<br>
@@ -383,14 +381,22 @@ fTPM、セキュアブートを有効、CSM無効(機種による)の3つ<br><br
 <hr>
 　<details name="uefi" id="error"><summary>起動しなくなった時は</summary>
 	<p><div style="padding-left:0.5em;">
-	CSM を無効にすると、古いグラボを起動時に見失う場合や、<br>
-	古い構成のディスクを見失ってwindowsのロードに失敗する事<br>
+	CSM を無効にすると、グラボを起動時に見失う場合や、<br>
+	古い構成のSSDを見失ってwindowsのロードに失敗する事<br>
 	があります。<br><br>
 
-	その場合は、PC本体のコンセントを抜き側面パネルを取り外し<br>
-	マザボ上のボタン電池を取り外してください。　15分ほど放置<br>
-	したのち、ボタン電池を取り付け側面パネルを戻し<br>
-	コンセントを接続して電源を入れます。<br><br>
+	・画面は映るがエラーでWindowsが起動しない<br>
+	SSDのCドライブやDドライブの構成が古いため起こります。<br>
+	SecureBootをDisabled(無効)、CSMをEnabled(有効)に戻します。<br><br>
+
+	・画面が映らない、エラー音(ﾋﾟｰﾋﾟｰﾋﾟｰﾋﾟｰ)などが鳴る<br>
+	グラボのファームウエアが古いため起こります。<br>
+	HDMIケーブルのみを接続しても何も映らない場合は<br><br>
+
+	PC本体のコンセントを抜き、側面パネルを取り外し<br>
+	マザボ上のボタン電池を取り外してください。<br>
+	15分ほど放置したのち、ボタン電池を取り付け<br>
+	側面パネルを戻しコンセントを接続して電源を入れます。<br><br>
 
 	<img src="./pic/cmos_clear.png" width="610" height="813"><br><br>
 	なんだかんだAsusのファーム(BIOS)はよく出来てると思った。<br>
