@@ -73,10 +73,11 @@ fTPM、セキュアブートを有効、CSM無効(機種による)の3つ<br><br
 
 	4.ファームウェアの設定(fTPM)<br>
 	<div style="padding-left:0.5em;">
-	まず画面右下のAdvanced Mode(詳細モード) を選択します。画面上部<br>
-	にある Advanced(詳細) タブを開くと、一番上に AMD fTPM Config～<br>
-	が有るので、メニューに入ります。TPM Device Selection を選ぶと<br>
-	選択肢が表示されるので、Firmware TPM(有効) にします。<br><br>
+	まず画面右下のAdvanced Mode(詳細モード) を選択します。<br>
+	画面上部にある Advanced(詳細) タブを開くと、メニューの<br>
+	一番上に AMD fTPM Config～が有るので、メニューに入ります。<br>
+	TPM Device Selection を選ぶと、選択肢が表示されるので、<br>
+	Firmware TPM(有効) にします。<br><br>
 
 	・Advanced→AMD fTPM Config→TPM Device→Firmware TPM<br>
 	<img src="./pic/asus02.png" width="340" height="255"> <img src="./pic/asus03.png" width="340" height="255"><br>
@@ -85,12 +86,12 @@ fTPM、セキュアブートを有効、CSM無効(機種による)の3つ<br><br
 
 	5.セキュアブートの有効化<br>
 	<div style="padding-left:0.5em;">
-	メニュー上段の ←を選択し 前画面へ、上から三番目の SecureBoot<br>
+	画面上部の Boot(起動) タブを開き、上から三番目の SecureBoot<br>
 	メニューに入り、OS Type を選択すると選択肢が表示されるので<br>
 	Windows UEFI Mode に変更します。<br><br>
 
 	・Boot→SecureBoot→OS Type→Windows UEFI<br>
-	<img src="./pic/asus08a.png" width="340" height="255"> <img src="./pic/asus08b.png" width="340" height="255"><br>
+	<img src="./pic/asus08b.png" width="340" height="255"><br>
 	<img src="./pic/asus09.png" width="680" height="510"><br><br>
 	</div>
 
@@ -155,7 +156,7 @@ fTPM、セキュアブートを有効、CSM無効(機種による)の3つ<br><br
 	6.セキュアブートモードの設定<br>
 	<div style="padding-left:0.5em;">
 	最上段の Security タブを開き、SecureBootメニューに入ります。<br>
-	Secure Boot の項目をいったん<span style="font-weight:bold;">Disabled(無効)</span>にします。<br>
+	Secure Boot の項目を<span style="font-weight:bold;">いったんDisabled(無効)</span>にします。<br>
 	Secure Boot Mode を選択すると、選択肢が表示されるので、<br>
 	Standard(標準) にします。<br><br>
 
@@ -185,7 +186,7 @@ fTPM、セキュアブートを有効、CSM無効(機種による)の3つ<br><br
 	9.動作確認<br>
 	<div style="padding-left:0.5em;">
 	Windowsが起動したら、Valorantでエラーが出ないか確認します。<br>
-	エラーが引き続き出る場合は、<a href="https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11278912276" target="_blank">こちらの手順</a>を試してみてください。<br><br>
+	エラーが引き続き出る場合は、<a href="https://www.asrock.com/support/faq.jp.asp?id=531" target="_blank">公式の手順</a>か<a href="https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11278912276" target="_blank">こちらの手順</a>を試してみてください。<br><br>
 	</div>
 
 	※トラブルシューティング<br>
@@ -390,6 +391,10 @@ fTPM、セキュアブートを有効、CSM無効(機種による)の3つ<br><br
 	マザボ上のボタン電池を取り外してください。　15分ほど放置<br>
 	したのち、ボタン電池を取り付け側面パネルを戻し<br>
 	コンセントを接続して電源を入れます。<br><br>
+
+	<img src="./pic/cmos_clear.png" width="610" height="813"><br><br>
+	なんだかんだAsusのファーム(BIOS)はよく出来てると思った。<br>
+	ちゃんと詰まないようにできてる。逆にGIGAは俺でも解らん…<br><br>
 	</div>
  	</p></details>
 </section>
